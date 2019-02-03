@@ -121,7 +121,7 @@ if ($signUp) {
 
         $_SESSION['login'] = true;
         $_SESSION['user'] = $loginU;
-        header("Location:http://localhost/Web%20Dev%20copy/login%20Project/access.php?form=Logined");
+        header("Location:http://localhost/Web_Dev_copy/login_Project/access.php?form=Logined");
 
  	  } else{
 
