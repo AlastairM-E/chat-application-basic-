@@ -54,11 +54,11 @@ textarea {
 
 .post {
 	width:93%;
-	padding:10px 0px 10px 0px;
+	padding:10px;
 	border:1px solid black;
 	background:rgba(255, 255,255, 1);
 	margin-bottom: 20px;
-	margin-left:1%;
+	
 }
 
 .tag{
@@ -76,4 +76,8 @@ textarea {
 
 #board {
 	grid-column: 2fr;
+}
+
+#wrapper_chat {
+	padding:10%;
 }
