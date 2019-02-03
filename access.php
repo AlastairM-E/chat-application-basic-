@@ -37,7 +37,7 @@ session_destroy();*/
 
 <!--- tab column-->
 
-<div class='colL'></div>
+<div class='colL'>hello</div>
 
 <!-- live chat column -->
 <div class='colL' id="livechat">
