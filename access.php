@@ -42,6 +42,7 @@ session_destroy();*/
 <!-- live chat column -->
 <div class='colL' id="livechat">
 
+<div id="wrapper_chat">
 <textarea name="postArea" id="comment_textarea"></textarea>
 
 <!-- <button type="submit" name="PostSubmit" id="submit_btn">submit</button>-->
@@ -57,7 +58,7 @@ session_destroy();*/
 
 <div class='colL' id="board"></div>
 
-
+</div>
  
 </div> <!-- grid wrapper end -->
 
