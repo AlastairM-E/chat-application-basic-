@@ -1,0 +1,166 @@
+/* LOGIN CSS STUFF */
+
+/*VARRIABLES*/
+
+:root {
+ --valid-border:rgba(115,185,60,1);
+ --valid-faded-background:rgba(115,185,60,0.1);
+ --invalid-border:rgba(185,5,5,1);
+ --invalid-faded-background:rgba(185,5,5,0.1);
+ --info-information-text:rgba(0,130,245,1);
+ --info-information-background:rgba(0,130,245,0.1);
+ --The_background_colour:rgba(0,150,200,1);
+ --the_sign_up_login_page_color:linear-gradient( rgba(0,150,200,0.5), rgba(0,150,200,0.9));
+
+}
+
+/*SIGN UP PAGE*/
+
+
+.logs{
+
+ border:black solid 4px;
+ border-radius: 5%;
+width:80%;
+padding:5px;
+height:20px;
+margin:0.5em;
+border-color: black;
+
+} 
+
+.submit{
+	background:linear-gradient(rgba(0,255,0,0.6), rgba(0,205,0,0.8));
+	color:white;
+	font-size: 1.1em;
+	border:solid 4px white;
+	border-radius: 10%;
+	width:50%;
+	padding:0.5%;
+
+}
+
+.submit:hover{
+	border-color: rgba(205,205,0,0.6);
+	font-size: 1.2em;
+
+
+}
+
+.submit:active{
+ background:linear-gradient(rgba(255,255,0,0.4), rgba(235,235,0,0.6));
+ border-color: rgba(245,245,0,0.6);
+
+}
+
+[disabled]{
+	cursor: not-allowed;
+	background:linear-gradient(rgba(0,205,0,0.8), rgba(0,155,0,1));
+	color:rgba(255,255,255,0.75);
+}
+
+[disabled]:hover{
+	border-color:red;
+	font-size: 1.1em;
+}
+
+
+
+[type="password"]{
+	margin-left:8px;
+}
+
+.msg{
+	color:rgba(195,5,5,1);
+	background:rgba(195,5,5,0.2);
+	border:rgba(195,5,5,1) 2.5px solid;
+	border-radius: 5%;
+
+	
+}
+
+.valid_input {
+	border-color: green;
+}
+
+.invalid_input{
+	border-color:red;
+} 
+
+p{
+display:block;
+font-weight: bolder;
+height:1em;
+padding:10px 5px;
+width:max-content;
+background:var(--info-information-background);
+color:var(--info-information-text);
+ border-radius: 5%;
+
+
+}
+
+li{
+font-weight: bolder;
+height:1em;
+padding:10px 5px;
+width:max-content;
+background:var(--info-information-background);
+color:var(--info-information-text);
+margin:5px;
+border-radius: 5%;
+
+}
+
+input.invalid_input ~ p {
+	color:var(--invalid-border);
+	background: var(--invalid-faded-background);
+
+} 
+
+input.valid_input ~ p {
+	color:var(--valid-border);
+	background: var(--valid-faded-background);
+	
+} 
+
+#emailInput {
+	margin-left: 25px;
+}
+
+form{
+width:50%;
+margin-left: 15%;
+border:black solid 4px;
+padding:3% 10%;
+background: white;
+border-radius: 5%;
+height: max-content;
+}
+
+.error_msg_form{
+	padding:3% 15% 3% 5%;
+}
+
+.invalid_check {
+color: var(--invalid-border);
+background:var(--invalid-faded-background);
+}
+
+.valid_check{
+	color:var(--valid-border);
+	background:var(--valid-faded-background);
+}
+
+.important_info {
+	border:4px solid blue;
+	padding:1.5% 0%;
+	background: white;
+}
+
+/*LOGIN STYLES*/
+
+.login_page{
+	
+	background:var(--the_sign_up_login_page_color);
+}

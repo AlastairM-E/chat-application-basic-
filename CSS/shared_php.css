@@ -1,0 +1,57 @@
+/*SHARED CONTENT*/
+
+.input_pages {
+	padding:0.75% 25%;
+	background:var(--the_sign_up_login_page_color);
+	margin:0px;
+
+}
+
+#menu{
+	margin:1% 0%;
+	background: var(--The_background_colour);
+	padding:1%;
+	display:grid;
+	grid-template-columns:repeat(8,1fr);
+	
+	grid-gap: 10px;
+	text-align: center;
+
+}
+
+.link_to_pages{
+	border-right:1px solid white;
+	grid-column: 1fr;
+	text-decoration: none;
+	padding:25% 4%;
+	color:rgba(230,230,230,1);
+    font-size: 1.5em;
+    border-left:1px solid white;
+}
+
+.link_to_pages:hover{
+ color:rgba(255,255,255,1);
+}
+
+.slide_menu{
+	grid-column: 1fr;
+	text-decoration: none;
+	color:rgba(230,230,230,1);;
+	font-size: 3em;
+	padding:20% 4%;
+	transition:2s;
+}
+
+.slide_menu:hover{
+	
+	color:rgba(255,255,255,1);
+	border:none;
+	
+}
+
+.active_menu {
+
+	color:rgba(255,255,255,1);
+	transform: rotate(90deg);
+	
+}
