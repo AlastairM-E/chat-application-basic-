@@ -81,6 +81,16 @@ font-size: 1.4em;
 
 } 
 
+#gridLog {
+
+	grid-template-columns:repeat(4,1fr);
+
+
+}
+
+#livechat {
+	grid-column: 2/4;
+}
 
 }
 

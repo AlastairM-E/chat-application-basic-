@@ -210,6 +210,13 @@ let myGenerator = resetableGenerator(generator);
 let gen = myGenerator();
 let user = document.getElementsByTagName("title")[0].innerText.split("'")[0];
 
+window.onload = () => {
+
+gen.next();
+gen.reset();
+
+};
+
 setInterval(() => {
 
 gen.next();
