@@ -16,7 +16,6 @@ session_start();
 
 <body>
 
-<div id="gridLog">
 
 <?php
 
@@ -33,11 +32,29 @@ session_destroy();*/
 	//header('Location:http://localhost/Web%20Dev%20copy/login%20Project/send.php?form=Failed_Login');
 };
 
+include "PHP_components/menu.php";
+
+echo "<a href='http://localhost/Web_Dev_copy/login_Project/send.php' class='link_to_pages'>Sign Out</a>
+</div>";
+
 ?>
+
+<div id="gridLog">
+
+
+
 
 <!--- tab column-->
 
-<div class='colL'>hello</div>
+<div class='colL'>
+
+	hello
+
+
+
+</div>
+
+
 
 <!-- live chat column -->
 <div class='colL' id="livechat">
@@ -56,9 +73,13 @@ session_destroy();*/
 
 </div> <!-- live chat div end -->
 
-<div class='colL' id="board"></div>
+
+
 
 </div>
+
+
+<div class='colL' id="board"></div>
  
 </div> <!-- grid wrapper end -->
 

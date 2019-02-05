@@ -9,14 +9,17 @@ background:rgba(255,255,255,1);
 #gridLog {
 	display:grid;
 	grid-template-columns:repeat(3,1fr);
-	grid-gap: 10px;
 
 }
 
 .colL{
-	border-right:1px solid black;
+	border-right:7.5px solid  var(--The_background_colour);
 	grid-column: 1fr;
 	height:100%;
+}
+
+.colL:last-of-type{
+border:none;
 }
 
 textarea {
@@ -57,7 +60,7 @@ textarea {
 	padding:10px;
 	border:1px solid black;
 	background:rgba(255, 255,255, 1);
-	margin: 0% 30% 5% 0%;
+	margin: 0% 0% 5% 0%;
 	
 }
 
