@@ -24,9 +24,10 @@
 	grid-column: 1fr;
 	text-decoration: none;
 	padding:25% 4%;
-	color:rgba(230,230,230,1);
+	color:rgba(255,255,255,0.91);
     font-size: 1.5em;
     border-left:1px solid white;
+    transition:2s;
 }
 
 .link_to_pages:hover{
@@ -36,14 +37,13 @@
 .slide_menu{
 	grid-column: 1fr;
 	text-decoration: none;
-	color:rgba(230,230,230,1);;
+	color:rgba(255,255,255,0.91);
 	font-size: 3em;
 	padding:20% 4%;
 	transition:2s;
 }
 
 .slide_menu:hover{
-	
 	color:rgba(255,255,255,1);
 	border:none;
 	

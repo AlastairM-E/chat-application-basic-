@@ -112,14 +112,29 @@ font-size: 1.4em;
 	padding: 30% 6% 25% 6%;
 }
 
+
 .slide_menu{
 
 padding:27.5% 4%;
 
 }
 
+.login {
+	font-size: 3em;
+}
+
+.login_container {
+	margin-left:15%;
+}
+.submit{
+	margin-top:10%;
+}
+
+
 textarea {
 	width:90%;
 	height:100px;
+
+}
 
 }

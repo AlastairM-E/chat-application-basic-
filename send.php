@@ -22,8 +22,8 @@ setcookie('page', basename(__FILE__), time() + 86400, '/', null, null, true);
 
   <div class="input_pages login_page">
 
-  <form action="process.php" method="POST">
-
+  <form action="process.php" method="POST" class="login">
+<div class="login_container">
 <h2>Login</h2>
 
 <?php
@@ -81,11 +81,16 @@ break;
 
 ?>
 
+
+
 <div>Username : <input type="text" name="logUser" class="logs"></input></div>
 
 <div>Password : <input type="password" name="logPass" class="logs"></input></div>
 
 <input type="submit" value="Login" name="LogSubmit" class="submit"></input>
+
+</div>
+
 
 </form>
 

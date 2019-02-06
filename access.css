@@ -12,20 +12,28 @@ background:rgba(255,255,255,1);
 
 }
 
-.colL{
-	border-right:7.5px solid  var(--The_background_colour);
-	grid-column: 1fr;
-	height:100%;
-}
-
-.colL:last-of-type{
-border:none;
-}
 
 textarea {
 	width:96%;
 	height:100px;
+	border:5px solid rgba(0,100,255,0.5);
 
+}
+
+#button:hover {
+  color:rgba(0,100,255,1);
+}
+#button:active{
+	color:white;
+}
+
+.heading {
+	margin-left:5%;
+	font-size: large;
+}
+
+strong {
+	color:rgba(50,100,255,1);;
 }
 
 .tab{
@@ -83,4 +91,9 @@ textarea {
 
 #wrapper_chat {
 	padding:10%;
+}
+
+#livechat {
+		border-right:7.5px solid  var(--The_background_colour);
+		border-left:7.5px solid  var(--The_background_colour);
 }

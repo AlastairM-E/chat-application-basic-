@@ -46,18 +46,12 @@ echo "<a href='http://localhost/Web_Dev_copy/login_Project/send.php' class='link
 
 <!--- tab column-->
 
-<div class='colL'>
-
-	hello
-
-
-
-</div>
+<div class="heading"> Username: <strong><?php echo " ".$_SESSION['user'] ?></strong></div>
 
 
 
 <!-- live chat column -->
-<div class='colL' id="livechat">
+<div id="livechat">
 
 <div id="wrapper_chat">
 <textarea name="postArea" id="comment_textarea"></textarea>
@@ -79,7 +73,7 @@ echo "<a href='http://localhost/Web_Dev_copy/login_Project/send.php' class='link
 </div>
 
 
-<div class='colL' id="board"></div>
+<div id="board"></div>
  
 </div> <!-- grid wrapper end -->
 
