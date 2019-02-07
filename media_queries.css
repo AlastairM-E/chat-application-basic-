@@ -10,7 +10,14 @@ padding:3% 5% 3% 10%;
 }
 
 .input_pages {
-	padding:1.5% 20%;
+	padding:3% 15%;
+}
+
+.login {
+	font-size: 3em;
+}
+.submit{
+	font-size: 1em;
 }
 
 }
@@ -30,9 +37,16 @@ padding:3% 0% 3% 10%;
 }
 
 .logs{
- width:65%;
+ width:85%;
 
-} 
+}
+.login {
+	font-size: 2em;
+}
+
+.submit{
+	font-size: 1em;
+}
 
 }
 
@@ -51,9 +65,18 @@ padding:3% 0% 3% 5%;
 }
 
 .logs{
- width:65%;
+ width:90%;
 
 } 
+
+.login {
+	font-size: 2em;
+	width:75%;
+}
+
+.submit{
+	font-size: 1em;
+}
 
 }
 
@@ -76,6 +99,11 @@ font-size: 1.4em;
 
 }
 
+.link_to_pages{
+
+	padding: 30% 6% 25% 6%;
+}
+
 .logs{
  width:65%;
 
@@ -90,6 +118,23 @@ font-size: 1.4em;
 
 #livechat {
 	grid-column: 2/4;
+}
+
+.login {
+	font-size: 3em;
+	width:95%;
+}
+
+.login.submit {
+margin-top:10%;
+font-size: 1em;
+width:65%;
+
+}
+
+
+.login_container {
+	margin-left:15%;
 }
 
 }
@@ -121,13 +166,12 @@ padding:27.5% 4%;
 
 .login {
 	font-size: 3em;
+	width:95%;
 }
 
-.login_container {
-	margin-left:15%;
-}
-.submit{
-	margin-top:10%;
+.login.submit {
+margin-top:10%;
+font-size:1em;
 }
 
 

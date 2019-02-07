@@ -87,7 +87,7 @@ break;
 
 <div>Password : <input type="password" name="logPass" class="logs"></input></div>
 
-<input type="submit" value="Login" name="LogSubmit" class="submit"></input>
+<input type="submit" value="Login" name="LogSubmit" class="submit login"></input>
 
 </div>
 

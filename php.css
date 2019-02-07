@@ -164,3 +164,11 @@ background:var(--invalid-faded-background);
 	
 	background:var(--the_sign_up_login_page_color);
 }
+
+.login {
+	font-size: 3em;
+}
+.submit{
+	font-size: 0.8em;
+}
+
