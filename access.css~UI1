@@ -9,20 +9,31 @@ background:rgba(255,255,255,1);
 #gridLog {
 	display:grid;
 	grid-template-columns:repeat(3,1fr);
-	grid-gap: 10px;
 
 }
 
-.colL{
-	border-right:1px solid black;
-	grid-column: 1fr;
-	height:100%;
-}
 
 textarea {
 	width:96%;
 	height:100px;
+	border:5px solid rgba(0,100,255,0.5);
 
+}
+
+#button:hover {
+  color:rgba(0,100,255,1);
+}
+#button:active{
+	color:white;
+}
+
+.heading {
+	margin-left:5%;
+	font-size: large;
+}
+
+strong {
+	color:rgba(50,100,255,1);;
 }
 
 .tab{
@@ -56,15 +67,9 @@ textarea {
 	width:93%;
 	padding:10px;
 	border:1px solid black;
-<<<<<<< HEAD:access.css
 	background:rgba(255, 255,255, 1);
-	margin-bottom: 20px;
+	margin: 0% 0% 5% 0%;
 	
-=======
-	background:rgba(0, 0,0, 1);
-	margin-bottom: 20px;
-	margin-left:1%;
->>>>>>> UI1:CSS/access.css
 }
 
 .tag{
@@ -83,10 +88,12 @@ textarea {
 #board {
 	grid-column: 2fr;
 }
-<<<<<<< HEAD:access.css
 
 #wrapper_chat {
 	padding:10%;
 }
-=======
->>>>>>> UI1:CSS/access.css
+
+#livechat {
+		border-right:7.5px solid  var(--The_background_colour);
+		border-left:7.5px solid  var(--The_background_colour);
+}

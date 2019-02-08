@@ -30,7 +30,7 @@ echo"<a href='send.php' class='link_to_pages'>Login</a> </div>";?>
 //if the get request signUp is present
 if (isset($_GET["form"])) {
 
-echo "<form action='process.php' method='POST' class='error_msg_form'>";
+echo "<form action='process.php' method='POST' class='error_msg_form sign_up'>";
   echo "<h2>Sign Up</h2>";
  
  switch ($_GET["form"]) {
@@ -85,7 +85,7 @@ break;
 
 } else{
 
-echo "<form action='process.php' method='POST'>";
+echo "<form action='process.php' method='POST' class='sign_up'>";
  echo "<h2>Sign Up</h2>";
 
 };
@@ -102,7 +102,7 @@ echo "<form action='process.php' method='POST'>";
 
 
 
-    Username : <input type="text" name="username" data-type-regex_attributes="username" class="logs"></input>
+    Username : <input type="text" name="username" data-type-regex_attributes="username" class="logs username_log"></input>
 
 
     <p>

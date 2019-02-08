@@ -24,33 +24,34 @@
 	grid-column: 1fr;
 	text-decoration: none;
 	padding:25% 4%;
-	color:rgba(230,230,230,1);
+	color:rgba(255,255,255,0.91);
     font-size: 1.5em;
     border-left:1px solid white;
 }
 
 .link_to_pages:hover{
+	transition:0s;
  color:rgba(255,255,255,1);
 }
 
 .slide_menu{
 	grid-column: 1fr;
 	text-decoration: none;
-	color:rgba(230,230,230,1);;
+	color:rgba(255,255,255,0.91);
 	font-size: 3em;
 	padding:20% 4%;
 	transition:2s;
 }
 
 .slide_menu:hover{
-	
+	transition:0s;
 	color:rgba(255,255,255,1);
 	border:none;
 	
 }
 
-.active_menu {
 
+.active_menu {
 	color:rgba(255,255,255,1);
 	transform: rotate(90deg);
 	
