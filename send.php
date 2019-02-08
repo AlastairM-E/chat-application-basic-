@@ -83,7 +83,7 @@ break;
 
 
 
-<div>Username : <input type="text" name="logUser" class="logs"></input></div>
+<div>Username : <input type="text" name="logUser" class="logs username_log"></input></div>
 
 <div>Password : <input type="password" name="logPass" class="logs"></input></div>
 
