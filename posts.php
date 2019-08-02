@@ -130,6 +130,9 @@ if (!mysqli_stmt_prepare($stmtBlog, $insBlog)) {
 
 };
 
+fwrite($Ajax_data_writing, '{"Posts" : [false] }');
+fclose($Ajax_data_writing);
+
 } else{
 
 fwrite($Ajax_data_writing, '{"Posts" : [false] }');
