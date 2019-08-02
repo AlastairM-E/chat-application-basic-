@@ -33,7 +33,7 @@
 	transition:0s;
  color:rgba(255,255,255,1);
 }
-
+/* MENU logic
 .slide_menu{
 	grid-column: 1fr;
 	text-decoration: none;
@@ -56,3 +56,4 @@
 	transform: rotate(90deg);
 	
 }
+*/

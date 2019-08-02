@@ -1,5 +1,7 @@
 <?php
 
+$href_of_the_site = "http://localhost/Web_Dev_copy/login_Project/";
+
 session_start();
 
 function checksLog($logU, $logP,$url,$signUp,$ZorO,$gEt,$endU,$endP) { 
@@ -23,13 +25,13 @@ $loginP = mysqli_real_escape_string($db, $_POST[$logP]);
 
 if (!preg_match("/^[\w\.@_!€$^]{5,30}$/i", $loginU)) {                               
 
-  header("Location:http://localhost/Web_Dev_copy/login_Project/".$url."?form=Failed_".$endU);  
+  header("Location:".$href_of_the_site.$url."?form=Failed_".$endU);  
 
 } elseif (!preg_match("/^[\w\.@_!€$^]{9,30}$/i", $loginP)                               
 	|| !preg_match("/[A-Z]/", $loginP) 
 	|| !preg_match("/\d.*\d/", $loginP)) {                                            
 
-header("Location:http://localhost/Web_Dev_copy/login_Project/".$url."?form=Failed_".$endP);   
+header("Location:".$href_of_the_site.$url."?form=Failed_".$endP);   
 	
 } else {  
 
@@ -53,7 +55,7 @@ header("Location:http://localhost/Web_Dev_copy/login_Project/".$url."?form=Faile
                                                                                  
 if (!mysqli_stmt_prepare($stmtn, $search)) {                                     
 
-  header("Location:http://localhost/Web_Dev_copy/login_Project/".$url."?form=Error&type=1");
+  header("Location:".$href_of_the_site.$url."?form=Error&type=1");
 
 } else{                                                                     
 
@@ -65,7 +67,7 @@ if (!mysqli_stmt_prepare($stmtn, $search)) {
 
 if ($check === $ZorO){	    
                                                  
-    header("Location:http://localhost/Web_Dev_copy/login_Project/".$url."?form=Error&type=3"); 
+    header("Location:".$href_of_the_site.$url."?form=Error&type=3"); 
 	
 }else{
 
@@ -89,13 +91,13 @@ if ($signUp) {
 
   if (!mysqli_stmt_prepare($stmt, $insPass)) {                                     //Prepare the prepared statement: if the prepared statement fails
 
-   header("Location:http://localhost/Web_Dev_copy/login_Project/".$url."?form=Error&type=2"); //Send user with Error back to the signUp page if the SQL statement has failed
+   header("Location:".$href_of_the_site.$url."?form=Error&type=2"); //Send user with Error back to the signUp page if the SQL statement has failed
 
   } else {                                                                        //else of the prepared staement has not failed
 
    mysqli_stmt_bind_param($stmt, "ss", $loginU, $encryptP);
    mysqli_stmt_execute($stmt); 
-   header("Location:http://localhost/Web_Dev_copy/login_Project/send.php?form=signedUp");
+   header("Location:".$href_of_the_site."send.php?form=signedUp");
 
  };
 
@@ -121,16 +123,16 @@ if ($signUp) {
 
         $_SESSION['login'] = true;
         $_SESSION['user'] = $loginU;
-        header("Location:http://localhost/Web_Dev_copy/login_Project/access.php?form=Logined");
+        header("Location:".$href_of_the_site."access.php?form=Logined");
 
  	  } else{
 
- 			 header('Location:http://localhost/Web_Dev_copy/login_Project/send.php?form=Error&type=4');
+ 			 header("Location:".$href_of_the_site."send.php?form=Error&type=4");
       
  		};
  	};
 
-header('http://localhost/Web%20Dev%20copy/login%20Project/send.php?form=Failed_Login');
+header("Location:".$href_of_the_site."send.php?form=Failed_Login");
 
 /*END OF TE FUNCTIONS AND IF ELSE STATEMENTS*/
 
@@ -155,9 +157,9 @@ header('http://localhost/Web%20Dev%20copy/login%20Project/send.php?form=Failed_L
 //else if the submit button of 'LogSubmit' has been clicked
 //checksLog for the login
     
-if(!isset($_POST['submit']) && !isset($_POST['LogSubmit'])){                     
-
- header("Location:http://localhost/Web_Dev_copy/login_Project/".$_COOKIE['page']."?form=not_sent"); 
+if( !isset($_POST['submit']) && !isset($_POST['LogSubmit']) ){                     
+  header("Location:".$href_of_the_site.$_COOKIE['page']."?form=not_sent");
+ 
 
 } elseif(isset($_POST['submit'])) {                                             
 
